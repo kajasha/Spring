@@ -14,11 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
             model.addAttribute("name", name);
             return "greeting";
         }
-        @RequestMapping("/hi")
-        public String hi(@RequestParam(value="name", required=false, defaultValue="Sunshine") String name, Model model) {
-            model.addAttribute("name", name);
-            return "hi";
-        }
+
 
 
     }
